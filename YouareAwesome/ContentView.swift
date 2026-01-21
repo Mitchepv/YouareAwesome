@@ -41,22 +41,12 @@ struct ContentView: View {
             Button("Show Message!") {
                 
                 let messages = [ "You are Awesome!", "You are Great!", "Wow, you are awesome. Continue to do great things. I'm am so proud of you", "Fabulous, girls!", "Let's do great things", " Be wonderful and lovely", " The smartest in the room" ]
+            
                 
-                
-                message = messages [messageNumber]
-                messageNumber += 1
-                
-                if messageNumber == message.count {
-                    messageNumber = 0
-                }
-
+                message = messages [Int.random(in: 0...messages.count-1)]
              
-                imageName = "image\(imageNumber)"
-                imageNumber += 1
-                
-                if imageNumber > 9 {
-                    imageNumber = 0
-                }
+                imageName = "image\(Int.random(in: 0...9))"
+              
                 
 
             }
