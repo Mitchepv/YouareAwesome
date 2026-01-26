@@ -3,7 +3,7 @@
 //  YouareAwesome
 //
 //  Created by Nia Mitchell on 1/13/26.
-// commit after lesson 1.8
+
 
 import SwiftUI
 import AVFAudio
@@ -117,7 +117,6 @@ struct ContentView: View {
             print ("ERROR! 😡 \(error.localizedDescription) ")
         }
     }
-    
     
     
 }
